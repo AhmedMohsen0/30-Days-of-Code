@@ -14,7 +14,7 @@ int main() {
         cin >> a >> b >> n;
         int ans = a;
         for(int i = 0; i < n; i++){
-            ans += (int)pow(2, i)*b;
+            ans += (1 << i)*b;
             cout << ans << " \n"[i==n-1];
         }
     }
